@@ -1,0 +1,1828 @@
+env:
+  TERM: xterm-256color
+  WINIT_HIDPI_FACTOR: '1'
+window:
+  dimensions:
+    columns: 120
+    lines: 24
+  padding:
+    x: 10
+    'y': 10
+  dynamic_padding: true
+  decorations: none
+  startup_mode: Maximized
+scrolling:
+  history: 10000
+  multiplier: 3
+font:
+  normal:
+    family: Source Code Pro
+    style: Regular
+  bold:
+    family: Source Code Pro
+    style: Medium
+  size: 18
+  offset:
+    x: 0
+    'y': 0
+  glyph_offset:
+    x: 0
+    'y': 0
+draw_bold_text_with_bright_colors: false
+colors:
+  primary:
+    background: '0x000000'
+    foreground: '0xc1c1c1'
+  cursor:
+    text: '0x000000'
+    cursor: '0xc1c1c1'
+  normal:
+    black: '0x000000'
+    red: '0x5f8787'
+    green: '0xddeecc'
+    yellow: '0x99bbaa'
+    blue: '0x888888'
+    magenta: '0x999999'
+    cyan: '0xaaaaaa'
+    white: '0xc1c1c1'
+  bright:
+    black: '0x333333'
+    red: '0x5f8787'
+    green: '0xddeecc'
+    yellow: '0x99bbaa'
+    blue: '0x888888'
+    magenta: '0x999999'
+    cyan: '0xaaaaaa'
+    white: '0xc1c1c1'
+  indexed_colors:
+    - index: 16
+      color: '0xfd8900'
+    - index: 17
+      color: '0xcc6633'
+    - index: 18
+      color: '0xe0e0e0'
+    - index: 19
+      color: '0xd0d0d0'
+    - index: 20
+      color: '0x000000'
+    - index: 21
+      color: '0x151515'
+    - index: 16
+      color: '0xc7c795'
+    - index: 17
+      color: '0xc79595'
+    - index: 18
+      color: '0x393f45'
+    - index: 19
+      color: '0x565e65'
+    - index: 20
+      color: '0xadb3ba'
+    - index: 21
+      color: '0xdfe2e5'
+    - index: 16
+      color: '0xa65926'
+    - index: 17
+      color: '0xcc33cc'
+    - index: 18
+      color: '0x292329'
+    - index: 19
+      color: '0x695d69'
+    - index: 20
+      color: '0x9e8f9e'
+    - index: 21
+      color: '0xd8cad8'
+    - index: 16
+      color: '0xe8bbd0'
+    - index: 17
+      color: '0xcdab53'
+    - index: 18
+      color: '0x3a3432'
+    - index: 19
+      color: '0x4a4543'
+    - index: 20
+      color: '0x807d7c'
+    - index: 21
+      color: '0xd6d5d4'
+    - index: 16
+      color: '0xcb4b16'
+    - index: 17
+      color: '0xd33682'
+    - index: 18
+      color: '0xeee8d5'
+    - index: 19
+      color: '0x93a1a1'
+    - index: 20
+      color: '0x657b83'
+    - index: 21
+      color: '0x073642'
+    - index: 16
+      color: '0xc7c795'
+    - index: 17
+      color: '0xc79595'
+    - index: 18
+      color: '0x393f45'
+    - index: 19
+      color: '0x565e65'
+    - index: 20
+      color: '0xadb3ba'
+    - index: 21
+      color: '0xdfe2e5'
+    - index: 16
+      color: '0xd65407'
+    - index: 17
+      color: '0xc720ca'
+    - index: 18
+      color: '0x4a464d'
+    - index: 19
+      color: '0x666369'
+    - index: 20
+      color: '0x9f9da2'
+    - index: 21
+      color: '0xd8d7da'
+    - index: 16
+      color: '0xf99157'
+    - index: 17
+      color: '0xa3685a'
+    - index: 18
+      color: '0x393939'
+    - index: 19
+      color: '0x515151'
+    - index: 20
+      color: '0xb4b7b4'
+    - index: 21
+      color: '0xe0e0e0'
+    - index: 16
+      color: '0xb45a3c'
+    - index: 17
+      color: '0xbd5187'
+    - index: 18
+      color: '0x292424'
+    - index: 19
+      color: '0x585050'
+    - index: 20
+      color: '0x7e7777'
+    - index: 21
+      color: '0xe7dfdf'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0xd65407'
+    - index: 17
+      color: '0xc720ca'
+    - index: 18
+      color: '0x4a464d'
+    - index: 19
+      color: '0x666369'
+    - index: 20
+      color: '0x9f9da2'
+    - index: 21
+      color: '0xd8d7da'
+    - index: 16
+      color: '0xe4600e'
+    - index: 17
+      color: '0x9d4d0e'
+    - index: 18
+      color: '0x141414'
+    - index: 19
+      color: '0x242424'
+    - index: 20
+      color: '0xbfbbbf'
+    - index: 21
+      color: '0xefebef'
+    - index: 16
+      color: '0xffa500'
+    - index: 17
+      color: '0xb03060'
+    - index: 18
+      color: '0x282828'
+    - index: 19
+      color: '0x444155'
+    - index: 20
+      color: '0xb8b8b8'
+    - index: 21
+      color: '0xe8e8e8'
+    - index: 16
+      color: '0xd28445'
+    - index: 17
+      color: '0x8f5536'
+    - index: 18
+      color: '0x202020'
+    - index: 19
+      color: '0x303030'
+    - index: 20
+      color: '0xb0b0b0'
+    - index: 21
+      color: '0xe0e0e0'
+    - index: 16
+      color: '0xc76b29'
+    - index: 17
+      color: '0x9c637a'
+    - index: 18
+      color: '0x293256'
+    - index: 19
+      color: '0x5e6687'
+    - index: 20
+      color: '0x898ea4'
+    - index: 21
+      color: '0xdfe2f1'
+    - index: 16
+      color: '0xaa573c'
+    - index: 17
+      color: '0xbf40bf'
+    - index: 18
+      color: '0x26232a'
+    - index: 19
+      color: '0x585260'
+    - index: 20
+      color: '0x7e7887'
+    - index: 21
+      color: '0xe2dfe7'
+    - index: 16
+      color: '0xe8bbd0'
+    - index: 17
+      color: '0xcdab53'
+    - index: 18
+      color: '0x3a3432'
+    - index: 19
+      color: '0x4a4543'
+    - index: 20
+      color: '0x807d7c'
+    - index: 21
+      color: '0xd6d5d4'
+    - index: 16
+      color: '0xff9800'
+    - index: 17
+      color: '0x8d6e63'
+    - index: 18
+      color: '0x27292c'
+    - index: 19
+      color: '0x323639'
+    - index: 20
+      color: '0x676c71'
+    - index: 21
+      color: '0x9e9e9e'
+    - index: 16
+      color: '0xd70000'
+    - index: 17
+      color: '0x005f87'
+    - index: 18
+      color: '0xaf0000'
+    - index: 19
+      color: '0x008700'
+    - index: 20
+      color: '0x0087af'
+    - index: 21
+      color: '0x005f87'
+    - index: 16
+      color: '0xcb4b16'
+    - index: 17
+      color: '0xd33682'
+    - index: 18
+      color: '0xeee8d5'
+    - index: 19
+      color: '0x93a1a1'
+    - index: 20
+      color: '0x657b83'
+    - index: 21
+      color: '0x073642'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0xf5871f'
+    - index: 17
+      color: '0xa3685a'
+    - index: 18
+      color: '0xe0e0e0'
+    - index: 19
+      color: '0xd6d6d6'
+    - index: 20
+      color: '0x969896'
+    - index: 21
+      color: '0x282a2e'
+    - index: 16
+      color: '0xd19a66'
+    - index: 17
+      color: '0xbe5046'
+    - index: 18
+      color: '0x353b45'
+    - index: 19
+      color: '0x3e4451'
+    - index: 20
+      color: '0x565c64'
+    - index: 21
+      color: '0xb6bdca'
+    - index: 16
+      color: '0xf08e48'
+    - index: 17
+      color: '0xc43060'
+    - index: 18
+      color: '0x00384d'
+    - index: 19
+      color: '0x517f8d'
+    - index: 20
+      color: '0x869696'
+    - index: 21
+      color: '0xe6e6dc'
+    - index: 16
+      color: '0xdc9656'
+    - index: 17
+      color: '0xa16946'
+    - index: 18
+      color: '0xe8e8e8'
+    - index: 19
+      color: '0xd8d8d8'
+    - index: 20
+      color: '0x585858'
+    - index: 21
+      color: '0x282828'
+    - index: 16
+      color: '0xb65611'
+    - index: 17
+      color: '0xd43552'
+    - index: 18
+      color: '0x292824'
+    - index: 19
+      color: '0x6e6b5e'
+    - index: 20
+      color: '0x999580'
+    - index: 21
+      color: '0xe8e4cf'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0xd75f00'
+    - index: 17
+      color: '0x986801'
+    - index: 18
+      color: '0xf0f0f1'
+    - index: 19
+      color: '0xe5e5e6'
+    - index: 20
+      color: '0x696c77'
+    - index: 21
+      color: '0x202227'
+    - index: 16
+      color: '0xc76b29'
+    - index: 17
+      color: '0x9c637a'
+    - index: 18
+      color: '0x293256'
+    - index: 19
+      color: '0x5e6687'
+    - index: 20
+      color: '0x898ea4'
+    - index: 21
+      color: '0xdfe2f1'
+    - index: 16
+      color: '0xb45a3c'
+    - index: 17
+      color: '0xbd5187'
+    - index: 18
+      color: '0xe7dfdf'
+    - index: 19
+      color: '0x8a8585'
+    - index: 20
+      color: '0x655d5d'
+    - index: 21
+      color: '0x292424'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0xfd8900'
+    - index: 17
+      color: '0xcc6633'
+    - index: 18
+      color: '0x202020'
+    - index: 19
+      color: '0x303030'
+    - index: 20
+      color: '0xb0b0b0'
+    - index: 21
+      color: '0xe0e0e0'
+    - index: 16
+      color: '0xefe4a1'
+    - index: 17
+      color: '0xff79c6'
+    - index: 18
+      color: '0x663399'
+    - index: 19
+      color: '0x383a62'
+    - index: 20
+      color: '0xa0a0c5'
+    - index: 21
+      color: '0xccccff'
+    - index: 16
+      color: '0xe66b2b'
+    - index: 17
+      color: '0xd73c9a'
+    - index: 18
+      color: '0x222e38'
+    - index: 19
+      color: '0x586875'
+    - index: 20
+      color: '0x85939e'
+    - index: 21
+      color: '0xe8e9ed'
+    - index: 16
+      color: '0xf99b15'
+    - index: 17
+      color: '0xe96ba8'
+    - index: 18
+      color: '0x41323f'
+    - index: 19
+      color: '0x4f424c'
+    - index: 20
+      color: '0x8d8687'
+    - index: 21
+      color: '0xb9b6b0'
+    - index: 16
+      color: '0xf78c6c'
+    - index: 17
+      color: '0xff5370'
+    - index: 18
+      color: '0x2e3c43'
+    - index: 19
+      color: '0x314549'
+    - index: 20
+      color: '0xb2ccd6'
+    - index: 21
+      color: '0xeeffff'
+    - index: 16
+      color: '0xff9800'
+    - index: 17
+      color: '0x8d6e63'
+    - index: 18
+      color: '0x27292c'
+    - index: 19
+      color: '0x323639'
+    - index: 20
+      color: '0x676c71'
+    - index: 21
+      color: '0x9e9e9e'
+    - index: 16
+      color: '0x7fc1ca'
+    - index: 17
+      color: '0xf2c38f'
+    - index: 18
+      color: '0x556873'
+    - index: 19
+      color: '0x6a7d89'
+    - index: 20
+      color: '0x899ba6'
+    - index: 21
+      color: '0x899ba6'
+    - index: 16
+      color: '0xdc9656'
+    - index: 17
+      color: '0xa16946'
+    - index: 18
+      color: '0x282828'
+    - index: 19
+      color: '0x383838'
+    - index: 20
+      color: '0xb8b8b8'
+    - index: 21
+      color: '0xe8e8e8'
+    - index: 16
+      color: '0x3e7996'
+    - index: 17
+      color: '0x3e965b'
+    - index: 18
+      color: '0x0b342d'
+    - index: 19
+      color: '0x184e45'
+    - index: 20
+      color: '0x5f9c92'
+    - index: 21
+      color: '0xa7cec8'
+    - index: 16
+      color: '0xc7c795'
+    - index: 17
+      color: '0xc79595'
+    - index: 18
+      color: '0x393f45'
+    - index: 19
+      color: '0x565e65'
+    - index: 20
+      color: '0xadb3ba'
+    - index: 21
+      color: '0xdfe2e5'
+    - index: 16
+      color: '0xb65611'
+    - index: 17
+      color: '0xd43552'
+    - index: 18
+      color: '0xe8e4cf'
+    - index: 19
+      color: '0xa6a28c'
+    - index: 20
+      color: '0x7d7a68'
+    - index: 21
+      color: '0x292824'
+    - index: 16
+      color: '0xeb8500'
+    - index: 17
+      color: '0x826b28'
+    - index: 18
+      color: '0xc0c0c0'
+    - index: 19
+      color: '0xc0c0c0'
+    - index: 20
+      color: '0x808080'
+    - index: 21
+      color: '0x404040'
+    - index: 16
+      color: '0xd65407'
+    - index: 17
+      color: '0xe013d0'
+    - index: 18
+      color: '0xe1e1e2'
+    - index: 19
+      color: '0xc4c3c5'
+    - index: 20
+      color: '0x89878b'
+    - index: 21
+      color: '0x4f4b51'
+    - index: 16
+      color: '0x786dc5'
+    - index: 17
+      color: '0xc77c48'
+    - index: 18
+      color: '0x3d4048'
+    - index: 19
+      color: '0x53555d'
+    - index: 20
+      color: '0x7e8086'
+    - index: 21
+      color: '0xa9aaae'
+    - index: 16
+      color: '0xf5871f'
+    - index: 17
+      color: '0xa3685a'
+    - index: 18
+      color: '0xe0e0e0'
+    - index: 19
+      color: '0xd6d6d6'
+    - index: 20
+      color: '0x969896'
+    - index: 21
+      color: '0x282a2e'
+    - index: 16
+      color: '0xdb7b55'
+    - index: 17
+      color: '0x8a553f'
+    - index: 18
+      color: '0x282a2b'
+    - index: 19
+      color: '0x3b758c'
+    - index: 20
+      color: '0x43a5d5'
+    - index: 21
+      color: '0xeeeeee'
+    - index: 16
+      color: '0xea9560'
+    - index: 17
+      color: '0xec5f67'
+    - index: 18
+      color: '0x2c393f'
+    - index: 19
+      color: '0x37474f'
+    - index: 20
+      color: '0xc9ccd3'
+    - index: 21
+      color: '0xd5dbe5'
+    - index: 16
+      color: '0xd75f00'
+    - index: 17
+      color: '0x986801'
+    - index: 18
+      color: '0xf0f0f1'
+    - index: 19
+      color: '0xe5e5e6'
+    - index: 20
+      color: '0x696c77'
+    - index: 21
+      color: '0x202227'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0xc76b29'
+    - index: 17
+      color: '0x9c637a'
+    - index: 18
+      color: '0xdfe2f1'
+    - index: 19
+      color: '0x979db4'
+    - index: 20
+      color: '0x6b7394'
+    - index: 21
+      color: '0x293256'
+    - index: 16
+      color: '0x3e7996'
+    - index: 17
+      color: '0x3e965b'
+    - index: 18
+      color: '0x0b342d'
+    - index: 19
+      color: '0x184e45'
+    - index: 20
+      color: '0x5f9c92'
+    - index: 21
+      color: '0xa7cec8'
+    - index: 16
+      color: '0xaa573c'
+    - index: 17
+      color: '0xbf40bf'
+    - index: 18
+      color: '0xe2dfe7'
+    - index: 19
+      color: '0x8b8792'
+    - index: 20
+      color: '0x655f6d'
+    - index: 21
+      color: '0x26232a'
+    - index: 16
+      color: '0xb65611'
+    - index: 17
+      color: '0xd43552'
+    - index: 18
+      color: '0x292824'
+    - index: 19
+      color: '0x6e6b5e'
+    - index: 20
+      color: '0x999580'
+    - index: 21
+      color: '0xe8e4cf'
+    - index: 16
+      color: '0xae7313'
+    - index: 17
+      color: '0x9d6c7c'
+    - index: 18
+      color: '0xe7e6df'
+    - index: 19
+      color: '0x929181'
+    - index: 20
+      color: '0x6c6b5a'
+    - index: 21
+      color: '0x302f27'
+    - index: 16
+      color: '0xa65926'
+    - index: 17
+      color: '0xcc33cc'
+    - index: 18
+      color: '0x292329'
+    - index: 19
+      color: '0x695d69'
+    - index: 20
+      color: '0x9e8f9e'
+    - index: 21
+      color: '0xd8cad8'
+    - index: 16
+      color: '0xc76b29'
+    - index: 17
+      color: '0x9c637a'
+    - index: 18
+      color: '0x293256'
+    - index: 19
+      color: '0x5e6687'
+    - index: 20
+      color: '0x898ea4'
+    - index: 21
+      color: '0xdfe2f1'
+    - index: 16
+      color: '0xc7c795'
+    - index: 17
+      color: '0xc79595'
+    - index: 18
+      color: '0x393f45'
+    - index: 19
+      color: '0x565e65'
+    - index: 20
+      color: '0xadb3ba'
+    - index: 21
+      color: '0xdfe2e5'
+    - index: 16
+      color: '0xcf7d34'
+    - index: 17
+      color: '0x937121'
+    - index: 18
+      color: '0x36312e'
+    - index: 19
+      color: '0x5e5d5c'
+    - index: 20
+      color: '0x797977'
+    - index: 21
+      color: '0x9d9b97'
+    - index: 16
+      color: '0xdfaf8f'
+    - index: 17
+      color: '0x000000'
+    - index: 18
+      color: '0x404040'
+    - index: 19
+      color: '0x606060'
+    - index: 20
+      color: '0x808080'
+    - index: 21
+      color: '0xc0c0c0'
+    - index: 16
+      color: '0xd65407'
+    - index: 17
+      color: '0xc720ca'
+    - index: 18
+      color: '0x4a464d'
+    - index: 19
+      color: '0x666369'
+    - index: 20
+      color: '0x9f9da2'
+    - index: 21
+      color: '0xd8d7da'
+    - index: 16
+      color: '0xde935f'
+    - index: 17
+      color: '0xa3685a'
+    - index: 18
+      color: '0x282a2e'
+    - index: 19
+      color: '0x373b41'
+    - index: 20
+      color: '0xb4b7b4'
+    - index: 21
+      color: '0xe0e0e0'
+    - index: 16
+      color: '0xd19a66'
+    - index: 17
+      color: '0xbe5046'
+    - index: 18
+      color: '0x353b45'
+    - index: 19
+      color: '0x3e4451'
+    - index: 20
+      color: '0x565c64'
+    - index: 21
+      color: '0xb6bdca'
+    - index: 16
+      color: '0xd86868'
+    - index: 17
+      color: '0x8b6c37'
+    - index: 18
+      color: '0x222222'
+    - index: 19
+      color: '0x1d414d'
+    - index: 20
+      color: '0xb8b8b8'
+    - index: 21
+      color: '0xe8e8e8'
+    - index: 16
+      color: '0xf78c6c'
+    - index: 17
+      color: '0xff5370'
+    - index: 18
+      color: '0x303030'
+    - index: 19
+      color: '0x353535'
+    - index: 20
+      color: '0xb2ccd6'
+    - index: 21
+      color: '0xeeffff'
+    - index: 16
+      color: '0xe4600e'
+    - index: 17
+      color: '0x9d4d0e'
+    - index: 18
+      color: '0x141414'
+    - index: 19
+      color: '0x242424'
+    - index: 20
+      color: '0xbfbbbf'
+    - index: 21
+      color: '0xefebef'
+    - index: 16
+      color: '0xa07e3b'
+    - index: 17
+      color: '0xa87322'
+    - index: 18
+      color: '0x2c323b'
+    - index: 19
+      color: '0x3e4451'
+    - index: 20
+      color: '0x928374'
+    - index: 21
+      color: '0xd5c4a1'
+    - index: 16
+      color: '0xf99157'
+    - index: 17
+      color: '0xab7967'
+    - index: 18
+      color: '0x343d46'
+    - index: 19
+      color: '0x4f5b66'
+    - index: 20
+      color: '0xa7adba'
+    - index: 21
+      color: '0xcdd3de'
+    - index: 16
+      color: '0xdf5320'
+    - index: 17
+      color: '0xc33ff3'
+    - index: 18
+      color: '0xe6e2e0'
+    - index: 19
+      color: '0xa8a19f'
+    - index: 20
+      color: '0x766e6b'
+    - index: 21
+      color: '0x2c2421'
+    - index: 16
+      color: '0xe8bbd0'
+    - index: 17
+      color: '0xcdab53'
+    - index: 18
+      color: '0x3a3432'
+    - index: 19
+      color: '0x4a4543'
+    - index: 20
+      color: '0x807d7c'
+    - index: 21
+      color: '0xd6d5d4'
+    - index: 16
+      color: '0xcb4b16'
+    - index: 17
+      color: '0xd33682'
+    - index: 18
+      color: '0x073642'
+    - index: 19
+      color: '0x586e75'
+    - index: 20
+      color: '0x839496'
+    - index: 21
+      color: '0xeee8d5'
+    - index: 16
+      color: '0xd19a66'
+    - index: 17
+      color: '0xbe5046'
+    - index: 18
+      color: '0x353b45'
+    - index: 19
+      color: '0x3e4451'
+    - index: 20
+      color: '0x565c64'
+    - index: 21
+      color: '0xb6bdca'
+    - index: 16
+      color: '0xf0a000'
+    - index: 17
+      color: '0xb08060'
+    - index: 18
+      color: '0x2a3448'
+    - index: 19
+      color: '0x4d5666'
+    - index: 20
+      color: '0x9a99a3'
+    - index: 21
+      color: '0xdbdde0'
+    - index: 16
+      color: '0xff9800'
+    - index: 17
+      color: '0x8d6e63'
+    - index: 18
+      color: '0x27292c'
+    - index: 19
+      color: '0x323639'
+    - index: 20
+      color: '0x676c71'
+    - index: 21
+      color: '0x9e9e9e'
+    - index: 16
+      color: '0xfab795'
+    - index: 17
+      color: '0xf09383'
+    - index: 18
+      color: '0x232530'
+    - index: 19
+      color: '0x2e303e'
+    - index: 20
+      color: '0x9da0a2'
+    - index: 21
+      color: '0xdcdfe4'
+    - index: 16
+      color: '0xdf5320'
+    - index: 17
+      color: '0xc33ff3'
+    - index: 18
+      color: '0x2c2421'
+    - index: 19
+      color: '0x68615e'
+    - index: 20
+      color: '0x9c9491'
+    - index: 21
+      color: '0xe6e2e0'
+    - index: 16
+      color: '0xc7c795'
+    - index: 17
+      color: '0xc79595'
+    - index: 18
+      color: '0x393f45'
+    - index: 19
+      color: '0x565e65'
+    - index: 20
+      color: '0xadb3ba'
+    - index: 21
+      color: '0xdfe2e5'
+    - index: 16
+      color: '0x935c25'
+    - index: 17
+      color: '0xb72dd2'
+    - index: 18
+      color: '0x1f292e'
+    - index: 19
+      color: '0x516d7b'
+    - index: 20
+      color: '0x7195a8'
+    - index: 21
+      color: '0xc1e4f6'
+    - index: 16
+      color: '0xa65926'
+    - index: 17
+      color: '0xcc33cc'
+    - index: 18
+      color: '0x292329'
+    - index: 19
+      color: '0x695d69'
+    - index: 20
+      color: '0x9e8f9e'
+    - index: 21
+      color: '0xd8cad8'
+    - index: 16
+      color: '0xf08e48'
+    - index: 17
+      color: '0xc43060'
+    - index: 18
+      color: '0x00384d'
+    - index: 19
+      color: '0x517f8d'
+    - index: 20
+      color: '0x869696'
+    - index: 21
+      color: '0xe6e6dc'
+    - index: 16
+      color: '0xdf5320'
+    - index: 17
+      color: '0xc33ff3'
+    - index: 18
+      color: '0x2c2421'
+    - index: 19
+      color: '0x68615e'
+    - index: 20
+      color: '0x9c9491'
+    - index: 21
+      color: '0xe6e2e0'
+    - index: 16
+      color: '0xcf7d34'
+    - index: 17
+      color: '0x937121'
+    - index: 18
+      color: '0x36312e'
+    - index: 19
+      color: '0x5e5d5c'
+    - index: 20
+      color: '0x797977'
+    - index: 21
+      color: '0x9d9b97'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0x3e7996'
+    - index: 17
+      color: '0x3e965b'
+    - index: 18
+      color: '0x0b342d'
+    - index: 19
+      color: '0x184e45'
+    - index: 20
+      color: '0x5f9c92'
+    - index: 21
+      color: '0xa7cec8'
+    - index: 16
+      color: '0xb65611'
+    - index: 17
+      color: '0xd43552'
+    - index: 18
+      color: '0x292824'
+    - index: 19
+      color: '0x6e6b5e'
+    - index: 20
+      color: '0x999580'
+    - index: 21
+      color: '0xe8e4cf'
+    - index: 16
+      color: '0xb45a3c'
+    - index: 17
+      color: '0xbd5187'
+    - index: 18
+      color: '0x292424'
+    - index: 19
+      color: '0x585050'
+    - index: 20
+      color: '0x7e7777'
+    - index: 21
+      color: '0xe7dfdf'
+    - index: 16
+      color: '0xf9a959'
+    - index: 17
+      color: '0xf97394'
+    - index: 18
+      color: '0x393939'
+    - index: 19
+      color: '0x515151'
+    - index: 20
+      color: '0xb4b7b4'
+    - index: 21
+      color: '0xe0e0e0'
+    - index: 16
+      color: '0xae7313'
+    - index: 17
+      color: '0x9d6c7c'
+    - index: 18
+      color: '0x302f27'
+    - index: 19
+      color: '0x5f5e4e'
+    - index: 20
+      color: '0x878573'
+    - index: 21
+      color: '0xe7e6df'
+    - index: 16
+      color: '0xfc4769'
+    - index: 17
+      color: '0xb15f4a'
+    - index: 18
+      color: '0x151515'
+    - index: 19
+      color: '0x464646'
+    - index: 20
+      color: '0xb9b9b9'
+    - index: 21
+      color: '0xe8e8e8'
+    - index: 16
+      color: '0xaf3a03'
+    - index: 17
+      color: '0xd65d0e'
+    - index: 18
+      color: '0xebdbb2'
+    - index: 19
+      color: '0xd5c4a1'
+    - index: 20
+      color: '0x665c54'
+    - index: 21
+      color: '0x3c3836'
+    - index: 16
+      color: '0xeb8500'
+    - index: 17
+      color: '0x826b28'
+    - index: 18
+      color: '0xc0c0c0'
+    - index: 19
+      color: '0xc0c0c0'
+    - index: 20
+      color: '0x808080'
+    - index: 21
+      color: '0x404040'
+    - index: 16
+      color: '0xdb7b55'
+    - index: 17
+      color: '0x8a553f'
+    - index: 18
+      color: '0x282a2b'
+    - index: 19
+      color: '0x3b758c'
+    - index: 20
+      color: '0x43a5d5'
+    - index: 21
+      color: '0xeeeeee'
+    - index: 16
+      color: '0xa07e3b'
+    - index: 17
+      color: '0xa87322'
+    - index: 18
+      color: '0x2c323b'
+    - index: 19
+      color: '0x3e4451'
+    - index: 20
+      color: '0x928374'
+    - index: 21
+      color: '0xd5c4a1'
+    - index: 16
+      color: '0xdfaf8f'
+    - index: 17
+      color: '0x000000'
+    - index: 18
+      color: '0x404040'
+    - index: 19
+      color: '0x606060'
+    - index: 20
+      color: '0x808080'
+    - index: 21
+      color: '0xc0c0c0'
+    - index: 16
+      color: '0xbdb6c5'
+    - index: 17
+      color: '0xdedae2'
+    - index: 18
+      color: '0x392551'
+    - index: 19
+      color: '0x7b6d8b'
+    - index: 20
+      color: '0xddd6e5'
+    - index: 21
+      color: '0x470546'
+    - index: 16
+      color: '0x0086b3'
+    - index: 17
+      color: '0x333333'
+    - index: 18
+      color: '0xf5f5f5'
+    - index: 19
+      color: '0xc8c8fa'
+    - index: 20
+      color: '0xe8e8e8'
+    - index: 21
+      color: '0xffffff'
+    - index: 16
+      color: '0xae7313'
+    - index: 17
+      color: '0x9d6c7c'
+    - index: 18
+      color: '0xe7e6df'
+    - index: 19
+      color: '0x929181'
+    - index: 20
+      color: '0x6c6b5a'
+    - index: 21
+      color: '0x302f27'
+    - index: 16
+      color: '0xcf7d34'
+    - index: 17
+      color: '0x937121'
+    - index: 18
+      color: '0x36312e'
+    - index: 19
+      color: '0x5e5d5c'
+    - index: 20
+      color: '0x797977'
+    - index: 21
+      color: '0x9d9b97'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+    - index: 16
+      color: '0xfc6d24'
+    - index: 17
+      color: '0xbe643c'
+    - index: 18
+      color: '0x303030'
+    - index: 19
+      color: '0x505050'
+    - index: 20
+      color: '0xd0d0d0'
+    - index: 21
+      color: '0xf5f5f5'
+    - index: 16
+      color: '0xd8bba2'
+    - index: 17
+      color: '0xb39f9f'
+    - index: 18
+      color: '0x5a6d7a'
+    - index: 19
+      color: '0x6d828e'
+    - index: 20
+      color: '0x98afb5'
+    - index: 21
+      color: '0xc9dbdc'
+    - index: 16
+      color: '0x786dc5'
+    - index: 17
+      color: '0xc77c48'
+    - index: 18
+      color: '0x3d4048'
+    - index: 19
+      color: '0x53555d'
+    - index: 20
+      color: '0x7e8086'
+    - index: 21
+      color: '0xa9aaae'
+    - index: 16
+      color: '0xf99157'
+    - index: 17
+      color: '0xab7967'
+    - index: 18
+      color: '0x343d46'
+    - index: 19
+      color: '0x4f5b66'
+    - index: 20
+      color: '0xa7adba'
+    - index: 21
+      color: '0xcdd3de'
+    - index: 16
+      color: '0x935c25'
+    - index: 17
+      color: '0xb72dd2'
+    - index: 18
+      color: '0xc1e4f6'
+    - index: 19
+      color: '0x7ea2b4'
+    - index: 20
+      color: '0x5a7b8c'
+    - index: 21
+      color: '0x1f292e'
+    - index: 16
+      color: '0x3e7996'
+    - index: 17
+      color: '0x3e965b'
+    - index: 18
+      color: '0x0b342d'
+    - index: 19
+      color: '0x184e45'
+    - index: 20
+      color: '0x5f9c92'
+    - index: 21
+      color: '0xa7cec8'
+    - index: 16
+      color: '0xc7c795'
+    - index: 17
+      color: '0xc79595'
+    - index: 18
+      color: '0x393f45'
+    - index: 19
+      color: '0x565e65'
+    - index: 20
+      color: '0xadb3ba'
+    - index: 21
+      color: '0xdfe2e5'
+    - index: 16
+      color: '0xa65926'
+    - index: 17
+      color: '0xcc33cc'
+    - index: 18
+      color: '0x292329'
+    - index: 19
+      color: '0x695d69'
+    - index: 20
+      color: '0x9e8f9e'
+    - index: 21
+      color: '0xd8cad8'
+    - index: 16
+      color: '0xf96a38'
+    - index: 17
+      color: '0x3971ed'
+    - index: 18
+      color: '0x282a2e'
+    - index: 19
+      color: '0x373b41'
+    - index: 20
+      color: '0xb4b7b4'
+    - index: 21
+      color: '0xe0e0e0'
+    - index: 16
+      color: '0xd28445'
+    - index: 17
+      color: '0x8f5536'
+    - index: 18
+      color: '0x202020'
+    - index: 19
+      color: '0x303030'
+    - index: 20
+      color: '0xb0b0b0'
+    - index: 21
+      color: '0xe0e0e0'
+    - index: 16
+      color: '0xdfaf8f'
+    - index: 17
+      color: '0x000000'
+    - index: 18
+      color: '0x404040'
+    - index: 19
+      color: '0x606060'
+    - index: 20
+      color: '0x808080'
+    - index: 21
+      color: '0xc0c0c0'
+    - index: 16
+      color: '0xde935f'
+    - index: 17
+      color: '0xa3685a'
+    - index: 18
+      color: '0x282a2e'
+    - index: 19
+      color: '0x373b41'
+    - index: 20
+      color: '0xb4b7b4'
+    - index: 21
+      color: '0xe0e0e0'
+    - index: 16
+      color: '0xae7313'
+    - index: 17
+      color: '0x9d6c7c'
+    - index: 18
+      color: '0x302f27'
+    - index: 19
+      color: '0x5f5e4e'
+    - index: 20
+      color: '0x878573'
+    - index: 21
+      color: '0xe7e6df'
+    - index: 16
+      color: '0xc76b29'
+    - index: 17
+      color: '0x9c637a'
+    - index: 18
+      color: '0x293256'
+    - index: 19
+      color: '0x5e6687'
+    - index: 20
+      color: '0x898ea4'
+    - index: 21
+      color: '0xdfe2f1'
+    - index: 16
+      color: '0xa07e3b'
+    - index: 17
+      color: '0xa87322'
+    - index: 18
+      color: '0x2c323b'
+    - index: 19
+      color: '0x3e4451'
+    - index: 20
+      color: '0x928374'
+    - index: 21
+      color: '0xd5c4a1'
+    - index: 16
+      color: '0xd28e5d'
+    - index: 17
+      color: '0x986841'
+    - index: 18
+      color: '0x333344'
+    - index: 19
+      color: '0x474160'
+    - index: 20
+      color: '0xb8b8b8'
+    - index: 21
+      color: '0xe8e8e8'
+    - index: 16
+      color: '0xea9560'
+    - index: 17
+      color: '0xec5f67'
+    - index: 18
+      color: '0x2c393f'
+    - index: 19
+      color: '0x37474f'
+    - index: 20
+      color: '0xc9ccd3'
+    - index: 21
+      color: '0xd5dbe5'
+    - index: 16
+      color: '0xdfaf8f'
+    - index: 17
+      color: '0x000000'
+    - index: 18
+      color: '0x404040'
+    - index: 19
+      color: '0x606060'
+    - index: 20
+      color: '0x808080'
+    - index: 21
+      color: '0xc0c0c0'
+    - index: 16
+      color: '0xca7f32'
+    - index: 17
+      color: '0xb49368'
+    - index: 18
+      color: '0x302b25'
+    - index: 19
+      color: '0x48413a'
+    - index: 20
+      color: '0xb4a490'
+    - index: 21
+      color: '0xd7c8bc'
+    - index: 16
+      color: '0xd65407'
+    - index: 17
+      color: '0xe013d0'
+    - index: 18
+      color: '0xe1e1e2'
+    - index: 19
+      color: '0xc4c3c5'
+    - index: 20
+      color: '0x89878b'
+    - index: 21
+      color: '0x4f4b51'
+    - index: 16
+      color: '0xaa573c'
+    - index: 17
+      color: '0xbf40bf'
+    - index: 18
+      color: '0x26232a'
+    - index: 19
+      color: '0x585260'
+    - index: 20
+      color: '0x7e7887'
+    - index: 21
+      color: '0xe2dfe7'
+    - index: 16
+      color: '0xb65611'
+    - index: 17
+      color: '0xd43552'
+    - index: 18
+      color: '0xe8e4cf'
+    - index: 19
+      color: '0xa6a28c'
+    - index: 20
+      color: '0x7d7a68'
+    - index: 21
+      color: '0x292824'
+    - index: 16
+      color: '0xae7313'
+    - index: 17
+      color: '0x9d6c7c'
+    - index: 18
+      color: '0x302f27'
+    - index: 19
+      color: '0x5f5e4e'
+    - index: 20
+      color: '0x878573'
+    - index: 21
+      color: '0xe7e6df'
+    - index: 16
+      color: '0xf08e48'
+    - index: 17
+      color: '0xc43060'
+    - index: 18
+      color: '0x00384d'
+    - index: 19
+      color: '0x517f8d'
+    - index: 20
+      color: '0x869696'
+    - index: 21
+      color: '0xe6e6dc'
+    - index: 16
+      color: '0xd8bba2'
+    - index: 17
+      color: '0xb39f9f'
+    - index: 18
+      color: '0xc9dbdc'
+    - index: 19
+      color: '0xb0c5c8'
+    - index: 20
+      color: '0x8299a1'
+    - index: 21
+      color: '0x5a6d7a'
+    - index: 16
+      color: '0xb45a3c'
+    - index: 17
+      color: '0xbd5187'
+    - index: 18
+      color: '0x292424'
+    - index: 19
+      color: '0x585050'
+    - index: 20
+      color: '0x7e7777'
+    - index: 21
+      color: '0xe7dfdf'
+    - index: 16
+      color: '0x786dc5'
+    - index: 17
+      color: '0xc77c48'
+    - index: 18
+      color: '0x3d4048'
+    - index: 19
+      color: '0x53555d'
+    - index: 20
+      color: '0x7e8086'
+    - index: 21
+      color: '0xa9aaae'
+    - index: 16
+      color: '0xcda869'
+    - index: 17
+      color: '0x9b703f'
+    - index: 18
+      color: '0x323537'
+    - index: 19
+      color: '0x464b50'
+    - index: 20
+      color: '0x838184'
+    - index: 21
+      color: '0xc3c3c3'
+    - index: 16
+      color: '0x786dc5'
+    - index: 17
+      color: '0xc77c48'
+    - index: 18
+      color: '0x3d4048'
+    - index: 19
+      color: '0x53555d'
+    - index: 20
+      color: '0x7e8086'
+    - index: 21
+      color: '0xa9aaae'
+    - index: 16
+      color: '0xf5871f'
+    - index: 17
+      color: '0xa3685a'
+    - index: 18
+      color: '0xe0e0e0'
+    - index: 19
+      color: '0xd6d6d6'
+    - index: 20
+      color: '0x969896'
+    - index: 21
+      color: '0x282a2e'
+    - index: 16
+      color: '0xf99157'
+    - index: 17
+      color: '0xa3685a'
+    - index: 18
+      color: '0x393939'
+    - index: 19
+      color: '0x515151'
+    - index: 20
+      color: '0xb4b7b4'
+    - index: 21
+      color: '0xe0e0e0'
+    - index: 16
+      color: '0xff9f43'
+    - index: 17
+      color: '0xb2643c'
+    - index: 18
+      color: '0x34353e'
+    - index: 19
+      color: '0x43454f'
+    - index: 20
+      color: '0xa5a5a9'
+    - index: 21
+      color: '0xeff0eb'
+    - index: 16
+      color: '0xfe8019'
+    - index: 17
+      color: '0xd65d0e'
+    - index: 18
+      color: '0x3c3836'
+    - index: 19
+      color: '0x504945'
+    - index: 20
+      color: '0xbdae93'
+    - index: 21
+      color: '0xebdbb2'
+    - index: 16
+      color: '0xdb7b55'
+    - index: 17
+      color: '0x8a553f'
+    - index: 18
+      color: '0x282a2b'
+    - index: 19
+      color: '0x3b758c'
+    - index: 20
+      color: '0x43a5d5'
+    - index: 21
+      color: '0xeeeeee'
+    - index: 16
+      color: '0xe66b2b'
+    - index: 17
+      color: '0xd73c9a'
+    - index: 18
+      color: '0x222e38'
+    - index: 19
+      color: '0x586875'
+    - index: 20
+      color: '0x85939e'
+    - index: 21
+      color: '0xe8e9ed'
+    - index: 16
+      color: '0xd28e5d'
+    - index: 17
+      color: '0x986841'
+    - index: 18
+      color: '0x333344'
+    - index: 19
+      color: '0x474160'
+    - index: 20
+      color: '0xb8b8b8'
+    - index: 21
+      color: '0xe8e8e8'
+    - index: 16
+      color: '0xcf7d34'
+    - index: 17
+      color: '0x937121'
+    - index: 18
+      color: '0x36312e'
+    - index: 19
+      color: '0x5e5d5c'
+    - index: 20
+      color: '0x797977'
+    - index: 21
+      color: '0x9d9b97'
+    - index: 16
+      color: '0xaaaaaa'
+    - index: 17
+      color: '0x444444'
+    - index: 18
+      color: '0x121212'
+    - index: 19
+      color: '0x222222'
+    - index: 20
+      color: '0x999999'
+    - index: 21
+      color: '0x999999'
+indexed_colors: []
+visual_bell:
+  animation: EaseOutExpo
+  duration: 0
+  color: '0xffffff'
+background_opacity: 1
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+dynamic_title: true
+cursor:
+  style: Block
+  unfocused_hollow: true
+live_config_reload: true
+working_directory: None
+alt_send_esc: true
+debug:
+  render_timer: false
+  persistent_logging: false
+  log_level: Warn
+  print_events: false
+  ref_test: false
+mouse:
+  double_click:
+    threshold: 300
+  triple_click:
+    threshold: 300
+  hide_when_typing: false
+  url:
+    launcher:
+      program: xdg-open
+    modifiers: None
+mouse_bindings:
+  - mouse: Middle
+    action: PasteSelection
+key_bindings:
+  - key: V
+    mods: Control|Shift
+    action: Paste
+  - key: C
+    mods: Control|Shift
+    action: Copy
+  - key: Insert
+    mods: Shift
+    action: PasteSelection
+  - key: Delete
+    chars: "\e[3~"
+  - key: Key0
+    mods: Control
+    action: ResetFontSize
+  - key: Equals
+    mods: Control
+    action: IncreaseFontSize
+  - key: Add
+    mods: Control
+    action: IncreaseFontSize
+  - key: Subtract
+    mods: Control
+    action: DecreaseFontSize
+  - key: Minus
+    mods: Control
+    action: DecreaseFontSize
+  - key: Return
+    mods: Alt
+    action: ToggleFullscreen
+  - key: Paste
+    action: Paste
+  - key: Copy
+    action: Copy
+  - key: L
+    mods: Control
+    action: ClearLogNotice
+  - key: L
+    mods: Control
+    chars: "\f"
+  - key: PageUp
+    mods: Shift
+    action: ScrollPageUp
+    mode: ~Alt
+  - key: PageDown
+    mods: Shift
+    action: ScrollPageDown
+    mode: ~Alt
+  - key: Home
+    mods: Shift
+    action: ScrollToTop
+    mode: ~Alt
+  - key: End
+    mods: Shift
+    action: ScrollToBottom
+    mode: ~Alt

@@ -1,0 +1,60 @@
+# Digital Ocean Droplets
+
+Host jupiter.cloud
+    HostName 157.230.19.206
+    IdentityFile /home/paulcooper/.ssh/dig_ocean
+
+# Remote login to office dev server via Fritzbox router
+
+Match host odev
+    HostName xdev.adspert.net
+    Port 18733
+    User paul
+    ForwardAgent yes
+
+
+# Fallback remote login to office dev server via DC1
+#Match host odev exec "! ifconfig | fgrep -q 192.168.10."
+#  HostName dev.in.adspert.de
+#  Port 22
+#  User YOUR-USERNAME-ON-DEV
+#  ProxyJump sesam
+#  ForwardAgent yes
+
+
+Match host *.dc1.adspert.de
+    User paul
+    ForwardAgent yes
+    IdentityFile ~/.ssh/id_rsa
+
+
+Host sesam sesam.dc1.adspert.de
+    HostName 18.196.135.229
+    Port 18114
+    User paul
+    ForwardAgent yes
+    IdentityFile ~/.ssh/id_rsa
+    LocalForward 18114 dev-02.dc1.adspert.de:18114
+
+
+Host dev02 dev-02.dc1.adspert.de
+    HostName dev-02.dc1.adspert.de
+    User paul
+    ProxyJump sesam
+    ForwardAgent yes
+    IdentityFile ~/.ssh/id_rsa
+
+
+Host ssh-01 ssh-01.dc1.adspert.de
+    HostName 18.196.135.229
+    Port 18114
+    IdentityFile ~/.ssh/id_rsa
+    ForwardAgent yes
+    LocalForward 18114 gitlab.dc1.adspert.de:18114
+
+
+# AWS
+
+Host git-codecommit.*.amazonaws.com
+  User APKAUJG2GGR4BRYJMBRU
+  IdentityFile /home/paulcooper/.ssh/adspert
